@@ -1,0 +1,14 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+body{font-family:var(--font-inter),system-ui,sans-serif;font-size:14px;line-height:1.5;color:#111827;background:#fff}
+:focus-visible{outline:2px solid #2563EB;outline-offset:2px}
+.fade{animation:fade .2s ease-out}.slide{animation:slide .3s ease-out}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+@keyframes slide{from{opacity:0;transform:translateX(16px)}to{opacity:1;transform:none}}
+
+/* Shared glass styles (login and dashboard use the same dark palette) */
+.glass-sidebar{background:rgba(10,10,10,.72);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px)}
+.glass-panel{background:rgba(15,17,20,.72);border:1px solid rgba(255,255,255,.1);border-radius:18px;-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);transition:transform .4s ease-out,border-color .4s ease-out,box-shadow .4s ease-out}
+.glass-panel:hover{transform:translateY(-4px);border-color:rgba(255,255,255,.2);box-shadow:0 12px 40px rgba(0,0,0,.45),0 0 30px rgba(201,75,75,.18)}
+.bar-fill{animation:barGrow 1s ease-out .3s backwards}
+@keyframes barGrow{from{width:0}}
+@media (prefers-reduced-motion:reduce){.bar-fill{animation:none}.glass-panel{transition:none}.glass-panel:hover{transform:none}}

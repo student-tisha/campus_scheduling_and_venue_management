@@ -1,0 +1,25 @@
+# secrets (never commit)
+.env
+.env.local
+.env.*.local
+
+# frontend
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+
+# backend
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.db
+
+# misc
+*.log
+.DS_Store
+node_modules
+.next
+.env

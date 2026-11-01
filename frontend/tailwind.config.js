@@ -1,0 +1,1 @@
+module.exports={content:['./app/**/*.tsx','./components/**/*.tsx'],theme:{extend:{colors:{side:'#F9FAFB',hov:'#F3F4F6',line:'#E5E7EB',ink:'#111827',mute:'#6B7280',acc:'#2563EB',ok:'#10B981',warn:'#F59E0B',bad:'#EF4444'},fontFamily:{mono:['var(--font-mono)','ui-monospace','monospace']}}}}
