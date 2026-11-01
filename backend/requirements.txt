@@ -6,3 +6,5 @@ pyjwt
 httpx
 
 ortools
+scipy>=1.9
+numpy
