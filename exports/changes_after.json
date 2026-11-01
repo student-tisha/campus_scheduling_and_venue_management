@@ -1,0 +1,223 @@
+[
+  {
+    "session_id": "CE303-L2",
+    "type": "moved",
+    "old": [
+      "THU",
+      7,
+      "CR-102"
+    ],
+    "new": [
+      "THU",
+      7,
+      "CR-202"
+    ],
+    "reason": "Old slot no longer valid: room unavailable (closed/maintenance) (THU P7, CR-102)"
+  },
+  {
+    "session_id": "CS101-B-L1",
+    "type": "moved",
+    "old": [
+      "WED",
+      5,
+      "CR-102"
+    ],
+    "new": [
+      "MON",
+      1,
+      "CR-201"
+    ],
+    "reason": "Old slot no longer valid: room unavailable (closed/maintenance) (WED P5, CR-102)"
+  },
+  {
+    "session_id": "CS101-B-L2",
+    "type": "moved",
+    "old": [
+      "MON",
+      1,
+      "CR-102"
+    ],
+    "new": [
+      "WED",
+      5,
+      "LH-3"
+    ],
+    "reason": "Old slot no longer valid: room unavailable (closed/maintenance) (MON P1, CR-102)"
+  },
+  {
+    "session_id": "CS101-D-L2",
+    "type": "moved",
+    "old": [
+      "WED",
+      2,
+      "CR-102"
+    ],
+    "new": [
+      "WED",
+      2,
+      "LH-4"
+    ],
+    "reason": "Old slot no longer valid: room unavailable (closed/maintenance) (WED P2, CR-102)"
+  },
+  {
+    "session_id": "CS202-T2",
+    "type": "added",
+    "old": null,
+    "new": [
+      "MON",
+      3,
+      "CR-104"
+    ],
+    "reason": "New session placed."
+  },
+  {
+    "session_id": "CS292-P1",
+    "type": "moved",
+    "old": [
+      "MON",
+      2,
+      "ELEC-LAB-1"
+    ],
+    "new": [
+      "FRI",
+      6,
+      "ELEC-LAB-1"
+    ],
+    "reason": "Old slot no longer valid: faculty unavailable (MON P2, ELEC-LAB-1)"
+  },
+  {
+    "session_id": "CS302-L3",
+    "type": "moved",
+    "old": [
+      "THU",
+      4,
+      "CR-102"
+    ],
+    "new": [
+      "THU",
+      4,
+      "CR-203"
+    ],
+    "reason": "Old slot no longer valid: room unavailable (closed/maintenance) (THU P4, CR-102)"
+  },
+  {
+    "session_id": "CS303-L1",
+    "type": "moved",
+    "old": [
+      "THU",
+      3,
+      "CR-102"
+    ],
+    "new": [
+      "THU",
+      3,
+      "CR-203"
+    ],
+    "reason": "Old slot no longer valid: room unavailable (closed/maintenance) (THU P3, CR-102)"
+  },
+  {
+    "session_id": "EC204-L3",
+    "type": "moved",
+    "old": [
+      "TUE",
+      4,
+      "CR-102"
+    ],
+    "new": [
+      "TUE",
+      4,
+      "CR-204"
+    ],
+    "reason": "Old slot no longer valid: room unavailable (closed/maintenance) (TUE P4, CR-102)"
+  },
+  {
+    "session_id": "EE203-L2",
+    "type": "moved",
+    "old": [
+      "WED",
+      1,
+      "CR-102"
+    ],
+    "new": [
+      "WED",
+      1,
+      "CR-104"
+    ],
+    "reason": "Old slot no longer valid: room unavailable (closed/maintenance) (WED P1, CR-102)"
+  },
+  {
+    "session_id": "HS101-D-L1",
+    "type": "moved",
+    "old": [
+      "TUE",
+      1,
+      "CR-102"
+    ],
+    "new": [
+      "TUE",
+      1,
+      "LH-1"
+    ],
+    "reason": "Old slot no longer valid: room unavailable (closed/maintenance) (TUE P1, CR-102)"
+  },
+  {
+    "session_id": "ME302-L3",
+    "type": "moved",
+    "old": [
+      "WED",
+      6,
+      "CR-102"
+    ],
+    "new": [
+      "WED",
+      6,
+      "CR-101"
+    ],
+    "reason": "Old slot no longer valid: room unavailable (closed/maintenance) (WED P6, CR-102)"
+  },
+  {
+    "session_id": "OE303-L3",
+    "type": "moved",
+    "old": [
+      "TUE",
+      2,
+      "CR-102"
+    ],
+    "new": [
+      "TUE",
+      2,
+      "LH-4"
+    ],
+    "reason": "Old slot no longer valid: room unavailable (closed/maintenance) (TUE P2, CR-102)"
+  },
+  {
+    "session_id": "PH101-A-L1",
+    "type": "moved",
+    "old": [
+      "TUE",
+      7,
+      "CR-102"
+    ],
+    "new": [
+      "TUE",
+      1,
+      "LH-2"
+    ],
+    "reason": "Old slot no longer valid: room unavailable (closed/maintenance) (TUE P7, CR-102)"
+  },
+  {
+    "session_id": "PH101-D-L1",
+    "type": "moved",
+    "old": [
+      "FRI",
+      1,
+      "CR-102"
+    ],
+    "new": [
+      "FRI",
+      1,
+      "CR-201"
+    ],
+    "reason": "Old slot no longer valid: room unavailable (closed/maintenance) (FRI P1, CR-102)"
+  }
+]
