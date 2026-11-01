@@ -1,5 +1,6 @@
 'use client';
-import {useState} from 'react';
+import {useState,useEffect} from 'react';
+import {loadLive} from '../lib/live';
 import * as Lu from 'lucide-react';
 import CinematicLogin from './CinematicLogin';
 import PageTransition,{Variant} from './PageTransition';
@@ -68,7 +69,7 @@ function Pick({list,field,mode}:{list:string[];field:'group'|'faculty'|'room';mo
   <select aria-label={`Select ${field}`} className={inp+' !w-48'} value={sel} onChange={e=>setSel(e.target.value)}>{list.map(l=><option key={l}>{l}</option>)}</select>
   {mode==='room'&&<><span className="text-sm">Capacity: <b>{exam?Math.floor(ROOMS[sel]/2):ROOMS[sel]}</b>{exam&&<span className="text-mute"> (halved for exams)</span>}</span>
    <label className="flex items-center gap-2 text-sm"><input type="checkbox" checked={exam} onChange={e=>setExam(e.target.checked)}/>Exam mode</label></>}</div>
-  <div key={sel} className="fade"><Grid evs={EVENTS.filter(e=>e[field]===sel)} mode={mode} exam={exam}/></div></div>;
+  <div key={sel} className="fade"><Grid evs={EVENTS.filter(e=>field==='group'?e.group.split('+').includes(sel):e[field]===sel)} mode={mode} exam={exam}/></div></div>;
 }
 
 function Tbl({h,rows}:{h:string[];rows:React.ReactNode[][]}){return <div className="overflow-x-auto"><table className="w-full text-sm text-left"><thead><tr className="border-b border-line text-xs text-mute">{h.map(x=><th key={x} className="py-2 pr-4 font-medium">{x}</th>)}</tr></thead><tbody>{rows.map((r,i)=><tr key={i} className="border-b border-line last:border-0">{r.map((c,j)=><td key={j} className="py-2 pr-4">{c}</td>)}</tr>)}</tbody></table></div>}
@@ -161,6 +162,7 @@ function Main({role,setRole}:{role:Role;setRole:(r:Role|null)=>void}){
  const[scr,setScr]=useState<Screen>('dash');const[col,setCol]=useState(false);const[ver,setVer]=useState(0);
  const[reqs,setReqs]=useState<Req[]>(REQS);const[toast,setToast]=useState('');
  const say=(m:string)=>{setToast(m);setTimeout(()=>setToast(''),3000)};
+ useEffect(()=>{loadLive().then(()=>setVer(v=>v+1)).catch(()=>say('Backend offline, showing demo data'))},[]);
  const name=USERS[role].name,nav=NAV.filter(n=>n.r.includes(role)),cur=NAV.find(n=>n.k===scr)!;
  return <KageBackdrop><div className="flex h-full">
   <aside className={`hidden md:flex ${col?'w-14':'w-[280px]'} shrink-0 flex-col glass-sidebar border-r border-white/10 transition-all duration-200`}>
